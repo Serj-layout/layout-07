@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>    
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>    
+    <header>
+        <div class="container header-container">
+            <div class="header-top">                                
+                <nav class="menu-top" id="menu-top">
+                    <div class="menu-icon" id="menu-icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="menu-top-list" id="menu-top-list">
+                        <li class="menu-top-item">
+                            <a href="#" class="menu-top__link">Магазины</a>
+                        </li>
+                        <li class="menu-top-item">
+                            <a href="#" class="menu-top__link">Акции</a>
+                        </li>
+                        <li class="menu-top-item">
+                            <a href="#" class="menu-top__link">Доставка и оплата</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="index.html" class="logo-link"><img src="img/general/logo.svg" alt="logo" class="logo"></a>
+                <a href="index.html" class="logo-text-link"><span class="logo-text">Drive Moto</span></a>
+                <div class="location">
+                    <img src="img/general/location.svg" alt="location-icon" class="location__icon">
+                    <span class="location__address">Москва,  ул. Науки  25</span>  
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="action">
+                        <img src="img/general/heart.svg" alt="heart-icon" class="icon-favourite">
+                    </a>
+                    <a href="#" class="action">
+                        <img src="img/general/person.svg" alt="person-icon" class="icon-person">
+                    </a>                    
+                    <div class="action-cart">
+                        <a href="#" class="action">
+                            <img src="img/general/cart.svg" alt="cart-icon" class="icon-cart">
+                        </a>                        
+                        <div class="cart-items">1</div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <nav class="menu-bottom" id="menu-bottom">
+            <ul class="menu-bottom-list" id="menu-bottom-list">
+                <li class="menu-bottom-item">
+                    <a href="#" class="menu-bottom__link">Квадроциклы</a>
+                </li>
+                <li class="menu-bottom-item">
+                    <a href="#" class="menu-bottom__link">Катера</a>
+                </li>
+                <li class="menu-bottom-item menu-bottom-item_active">
+                    <a href="#" class="menu-bottom__link">Гидроциклы</a>
+                </li>
+                <li class="menu-bottom-item">
+                    <a href="#" class="menu-bottom__link">Лодки</a>
+                </li>
+                <li class="menu-bottom-item">
+                    <a href="#" class="menu-bottom__link">Вездеходы</a>
+                </li>
+                <li class="menu-bottom-item">
+                    <a href="#" class="menu-bottom__link">Снегоходы</a>
+                </li>
+                <li class="menu-bottom-item">
+                    <a href="#" class="menu-bottom__link">Двигатели</a>
+                </li>
+                <li class="menu-bottom-item">
+                    <a href="#" class="menu-bottom__link">Запчасти</a>
+                </li>
+            </ul>
+        </nav>        
+    </header>
+    <div class="breadcrumbs">
+        <div class="container breadcrumbs-container">
+            <a href="index.html" class="breadcrumbs__link">Главная</a>
+            <span class="breadcrumbs__divider">&gt;</span>
+            <span>Гидроциклы</span>
+        </div>        
+    </div>
+    <main>
+        <section class="catalog">
+            <h1 class="catalog__title">Гидроциклы</h1>
+            <div class="sort">
+                <div class="sort-tabs-container">
+                    <button class="sort__tab">Полноприводные</button>
+                    <button class="sort__tab">от 5000</button>
+                    <button class="sort__tab">BRP</button>
+                    <button class="sort__tab">ещё</button>
+                </div>
+                <div class="sort-type">
+                    <button class="sort-order">
+                        <svg class="sort-order__arrow" width="9" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.74989 13L4.74989 2.05833L7.70545 5.09167L8.44434 4.33333L4.22211 0L-0.000108719 4.33333L0.73878 5.09167L3.69434 2.05833L3.69434 13H4.74989Z" fill="#C4C4C4"/>
+                        </svg>
+                        <svg class="sort-order__arrow" width="9" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.74989 13L4.74989 2.05833L7.70545 5.09167L8.44434 4.33333L4.22211 0L-0.000108719 4.33333L0.73878 5.09167L3.69434 2.05833L3.69434 13H4.74989Z" fill="#C4C4C4"/>
+                        </svg>
+                    </button>
+                    <select class="sort__select">
+                        <option>По популярности</option>  
+                    </select>
+                    <img src="img/catalog-page/sv-grid.svg" alt="grid view icon" class="sort__view sort__view_active">
+                    <img src="img/catalog-page/sv-row.svg" alt="row view icon" class="sort__view">
+                </div>
+            </div>
+            <div class="catalog-main">
+                <aside class="filter">
+                    <div class="filter-types-container">
+                        <span class="filter__type filter__type_chosen">Параметры</span>
+                        <span class="filter__type">По марке</span>
+                    </div>
+                    <div class="filter-item filter-item_correction">
+                        <div class="filter-item-header">
+                            <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_up">
+                            <h4 class="filter-item__title">Наличие</h4>
+                        </div>
+                        <div class="filter-options-container">
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native">
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">В наличие</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native">
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">Под заказ</span>
+                            </label> 
+                        </div>                                                                                       
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-item-header">
+                            <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_up">
+                            <h4 class="filter-item__title">Новинки</h4>
+                        </div>                            
+                        <label class="filter-option-radio">
+                            <input type="radio" class="input-native" name="items-type">
+                            <span class="filter__radio"></span>
+                            <span class="filter__label">Все</span>
+                        </label>
+                        <label class="filter-option-radio">
+                            <input type="radio" class="input-native" name="items-type">
+                            <span class="filter__radio"></span>
+                            <span class="filter__label">Новинки</span>
+                        </label>
+                        <label class="filter-option-radio">
+                            <input type="radio" class="input-native" name="items-type">
+                            <span class="filter__radio"></span>
+                            <span class="filter__label">Акции</span>
+                        </label>                                                                                                     
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-item-header">
+                            <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_up">
+                            <h4 class="filter-item__title">Цена</h4>
+                        </div>                            
+                        <div class="range-slider" data-slider="range-slider">                                
+                            <div class="range-slider-line" data-slider-line>
+                                <div class="range-slider__selected" data-slider-selected></div>
+                                <div class="range-slider__handler range-slider__handler_min" data-slider-handler>
+                                    <div class="range-slider__tooltip" data-slider-tooltip></div>
+                                </div>
+                                <div class="range-slider__handler range-slider__handler_max" data-slider-handler>
+                                    <div class="range-slider__tooltip" data-slider-tooltip></div>
+                                </div>
+                            </div>
+                            <div class="range-slider-values" data-slider-values>
+                                <div class="range-slider-point">от
+                                    <span class="range-slider__price" data-slider-point="100000">100 000</span>
+                                </div>
+                                <div class="range-slider-point">до
+                                    <span class="range-slider__price" data-slider-point="500000">500 000</span>
+                                </div>
+                            </div> 
+                            <input type="number" id="min-price" class="range-slider__input" data-slider-input>
+                            <input type="number" id="max-price" class="range-slider__input" data-slider-input>                                   
+                        </div>                                                                                
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-option-select">
+                            <span class="filter-option__label">Мощность, л.с.</span>                         
+                            <div class="filter-select" data-select>
+                                <select class="select-native" data-select-native>
+                                    <option>90</option>
+                                    <option>130</option>
+                                    <option>154</option>
+                                    <option>230</option>
+                                    <option>300</option>
+                                </select>
+                                <div class="filter-select-front" data-select-front>
+                                    <span class="filter-select__value" data-select-value>90</span>
+                                    <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_no-m" data-select-toggler>
+                                </div>
+                                <div class="filter-select-options" data-select-options>
+                                    <span class="option_selected">90</span>
+                                    <span>130</span>
+                                    <span>154</span>
+                                    <span>230</span>
+                                    <span>300</span>
+                                </div>                                        
+                            </div>                                                                
+                        </div>
+                        <hr class="filter__divider filter__divider-01">
+                        <div class="filter-option-select">
+                            <span class="filter-option__label">Мощность двигателя, л.с.</span>
+                            <div class="filter-select" data-select>
+                                <select class="select-native" data-select-native>
+                                    <option>90</option>
+                                    <option>130</option>
+                                    <option>154</option>
+                                    <option>230</option>
+                                    <option>300</option>
+                                </select>
+                                <div class="filter-select-front" data-select-front>
+                                    <span class="filter-select__value" data-select-value>90</span>
+                                    <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_no-m" data-select-toggler>
+                                </div>
+                                <div class="filter-select-options" data-select-options>
+                                    <span class="option_selected">90</span>
+                                    <span>130</span>
+                                    <span>154</span>
+                                    <span>230</span>
+                                    <span>300</span>
+                                </div>                                        
+                            </div>                                
+                        </div>
+                        <hr class="filter__divider filter__divider-02">
+                        <div class="filter-option-select">
+                            <span class="filter-option__label">Макс скорость</span>
+                            <div class="filter-select" data-select>
+                                <select class="select-native" data-select-native>
+                                    <option>90</option>
+                                    <option>130</option>
+                                    <option>154</option>
+                                    <option>230</option>
+                                    <option>300</option>
+                                </select>
+                                <div class="filter-select-front" data-select-front>
+                                    <span class="filter-select__value" data-select-value>90</span>
+                                    <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_no-m" data-select-toggler>
+                                </div>
+                                <div class="filter-select-options" data-select-options>
+                                    <span class="option_selected">90</span>
+                                    <span>130</span>
+                                    <span>154</span>
+                                    <span>230</span>
+                                    <span>300</span>
+                                </div>                                        
+                            </div>
+                        </div>
+                        <hr class="filter__divider filter__divider-03">
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-item-header">
+                            <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_up">
+                            <h4 class="filter-item__title">Бренд</h4>
+                        </div> 
+                        <div class="filter-options-container">                           
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native" checked>
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">BRP</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native" checked>
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">Spark 2</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native">
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">Spark 3</span>
+                            </label>
+                        </div>
+                        <a href="#" class="filter-options-more">Показать ещё</a>                                            
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-item-header">
+                            <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_up">
+                            <h4 class="filter-item__title">Модель</h4>
+                        </div>
+                        <input type="text" class="filter-model-input" placeholder="Введите модель">
+                        <div class="filter-options-container">                            
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native" checked>
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">Sea-doo Spark 2</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native" checked>
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">SeaDoo Spark 90</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native">
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">SeaDoo GTI 155</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native">
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">SeaDoo GTR 230</span>
+                            </label>
+                        </div>
+                        <a href="#" class="filter-options-more">Показать ещё</a>                                            
+                    </div>
+                    <div class="filter-item" id="filter-special-types">
+                        <div class="filter-item-header">
+                            <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_up">
+                            <h4 class="filter-item__title">Акции</h4>
+                        </div>
+                        <input type="text" id="input-special-types" class="hidden">                                                         
+                        <button class="filter__option-btn">Sale</button>
+                        <button class="filter__option-btn filter__option-btn_disabled">New</button>
+                        <button class="filter__option-btn filter__option-btn_disabled">Hit</button>
+                        <button class="filter__option-btn filter__dealer-btn">Дилер</button>                                                                   
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-item-header">
+                            <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_up">
+                            <h4 class="filter-item__title">Страны</h4>
+                        </div>
+                        <div class="filter-options-container">                             
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native" checked>
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">Россия</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native" checked>
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">Германия</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native">
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">Китай</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="input-native">
+                                <span class="filter__checkbox"></span>
+                                <span class="filter__label">США</span>
+                            </label>
+                        </div>
+                        <a href="#" class="filter-options-more">Показать ещё</a>                                            
+                    </div>
+                    <button class="filter__btn">Выбрать</button>                          
+                    <div class="filter-extra">
+                        <span class="filter-extra__label">Дополнительные параметры</span>
+                        <img src="img/catalog-page/toggle-arrow.svg" alt="toggle arrow" class="toggle toggle_no-m">
+                    </div>
+                    <span class="filter__reset">Сбросить фильтр</span>
+                </aside>
+                <div class="catalog-content">                    
+                    <div class="item-card-wrapper">
+                        <div class="item-card">
+                            <button class="add-favourite">
+                                <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="1">
+                            </button>
+                            <a href="#" class="item-card-action">
+                                <div class="item-card__img-wrapper">
+                                    <img src="img/catalog-page/catalog-item-1.png" alt="jet ski 1" class="item-card__img">
+                                </div>                                    
+                                <span class="item-card__info">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</span>
+                                <span class="item-card__price">1 049 500 ₽</span>
+                                <div class="item-card__more">посмотреть товар</div>
+                            </a>                            
+                            <button class="add-cart">
+                                <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                            </button>                            
+                        </div> 
+                    </div>
+                    <div class="item-card-wrapper">
+                        <div class="item-card">
+                            <div class="item-card__type">Sale</div>
+                            <button class="add-favourite">
+                                <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="1">
+                            </button>
+                            <a href="product.html" class="item-card-action">
+                                <div class="item-card__img-wrapper">
+                                    <img src="img/catalog-page/catalog-item-2.png" alt="jet ski 2" class="item-card__img">
+                                </div>                                    
+                                <span class="item-card__info">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
+                                <span class="item-card__price">1 100 475 ₽</span>
+                                <div class="item-card__more">посмотреть товар</div>
+                            </a>                            
+                            <button class="add-cart">
+                                <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                            </button>                            
+                        </div> 
+                    </div>                                   
+                    <div class="item-card">
+                        <button class="add-favourite">
+                            <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="1">
+                        </button>
+                        <a href="#" class="item-card-action">
+                            <div class="item-card__img-wrapper">
+                                <img src="img/catalog-page/catalog-item-3.png" alt="jet ski 3" class="item-card__img">
+                            </div>                                    
+                            <span class="item-card__info">Гидроцикл BRP SeaDoo GTR 230hp X California green</span>
+                            <span class="item-card__price">1 323 700 ₽</span>
+                            <div class="item-card__more">посмотреть товар</div>
+                        </a>                            
+                        <button class="add-cart">
+                            <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                        </button>                            
+                    </div>
+                    <div class="item-card">
+                        <div class="item-card__type">Sale</div>
+                        <button class="add-favourite">
+                            <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="4">
+                        </button>
+                        <div class="item-card__img-wrapper">
+                            <img src="img/catalog-page/catalog-item-4.png" alt="jet ski 4" class="item-card__img">     
+                        </div>                              
+                        <span class="item-card__info sold-out">Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream</span>
+                        <span class="item-card__out">нет в наличии</span>                                
+                        <a href="#" class="item-card__inform">Сообщить о поступлении</a>                                     
+                    </div>
+                    <div class="item-card">
+                        <button class="add-favourite">
+                            <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="1">
+                        </button>
+                        <a href="#" class="item-card-action">
+                            <div class="item-card__img-wrapper">
+                                <img src="img/catalog-page/catalog-item-5.png" alt="jet ski 5" class="item-card__img">
+                            </div>                                    
+                            <span class="item-card__info">Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal</span>
+                            <span class="item-card__price">1 543 000 ₽</span>
+                            <div class="item-card__more">посмотреть товар</div>
+                        </a>                            
+                        <button class="add-cart">
+                            <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                        </button>                            
+                    </div>
+                    <div class="item-card">
+                        <button class="add-favourite">
+                            <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="1">
+                        </button>
+                        <a href="#" class="item-card-action">
+                            <div class="item-card__img-wrapper">
+                                <img src="img/catalog-page/catalog-item-6.png" alt="jet ski 6" class="item-card__img">
+                            </div>                                    
+                            <span class="item-card__info">Гидроцикл BRP SeaDoo Spark 60hp 2 up</span>
+                            <span class="item-card__price">732 345 ₽</span>
+                            <div class="item-card__more">посмотреть товар</div>
+                        </a>                            
+                        <button class="add-cart">
+                            <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                        </button>                            
+                    </div>
+                    <div class="item-card">
+                        <button class="add-favourite">
+                            <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="1">
+                        </button>
+                        <a href="#" class="item-card-action">
+                            <div class="item-card__img-wrapper">
+                                <img src="img/catalog-page/catalog-item-7.png" alt="jet ski 7" class="item-card__img">
+                            </div>                                    
+                            <span class="item-card__info">Гидроцикл BRP SeaDoo Spark GTS 90hp Rental</span>
+                            <span class="item-card__price">857 666 ₽</span>
+                            <div class="item-card__more">посмотреть товар</div>
+                        </a>                            
+                        <button class="add-cart">
+                            <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                        </button>                            
+                    </div>
+                    <div class="item-card">
+                        <div class="item-card__type">Sale</div>
+                        <button class="add-favourite">
+                            <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="1">
+                        </button>
+                        <a href="#" class="item-card-action">
+                            <div class="item-card__img-wrapper">
+                                <img src="img/catalog-page/catalog-item-8.png" alt="jet ski 8" class="item-card__img">
+                            </div>                                    
+                            <span class="item-card__info">Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal blue</span>
+                            <span class="item-card__price">1 229 711 ₽</span>
+                            <div class="item-card__more">посмотреть товар</div>
+                        </a>                            
+                        <button class="add-cart">
+                            <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                        </button>                            
+                    </div>
+                    <div class="item-card">
+                        <button class="add-favourite">
+                            <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="1">
+                        </button>
+                        <a href="#" class="item-card-action">
+                            <div class="item-card__img-wrapper">
+                                <img src="img/catalog-page/catalog-item-9.png" alt="jet ski 9" class="item-card__img">
+                            </div>                                    
+                            <span class="item-card__info">Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper</span>
+                            <span class="item-card__price">587 440 ₽</span>
+                            <div class="item-card__more">посмотреть товар</div>
+                        </a>                            
+                        <button class="add-cart">
+                            <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                        </button>                            
+                    </div>
+                    <div class="item-card">
+                        <button class="add-favourite">
+                            <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="1">
+                        </button>
+                        <a href="#" class="item-card-action">
+                            <div class="item-card__img-wrapper">
+                                <img src="img/catalog-page/catalog-item-10.png" alt="jet ski 10" class="item-card__img">
+                            </div>                                    
+                            <span class="item-card__info">Гидроцикл Spark 2-UP 900 Ho Ace Pineapple </span>
+                            <span class="item-card__price">587 440 ₽</span>
+                            <div class="item-card__more">посмотреть товар</div>
+                        </a>                            
+                        <button class="add-cart">
+                            <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                        </button>                            
+                    </div>
+                    <div class="item-card">
+                        <div class="item-card__type">Sale</div>
+                        <button class="add-favourite">
+                            <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="4">
+                        </button>
+                        <div class="item-card__img-wrapper">
+                            <img src="img/catalog-page/catalog-item-11.png" alt="jet ski 11" class="item-card__img">     
+                        </div>                              
+                        <span class="item-card__info sold-out">Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla</span>
+                        <span class="item-card__out">нет в наличии</span>                                
+                        <a href="#" class="item-card__inform">Сообщить о поступлении</a>                                     
+                    </div>
+                    <div class="item-card">                        
+                        <button class="add-favourite">
+                            <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="4">
+                        </button>
+                        <div class="item-card__img-wrapper">
+                            <img src="img/catalog-page/catalog-item-12.png" alt="jet ski 12" class="item-card__img">     
+                        </div>                              
+                        <span class="item-card__info sold-out">Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry</span>
+                        <span class="item-card__out">нет в наличии</span>                                
+                        <a href="#" class="item-card__inform">Сообщить о поступлении</a>                                     
+                    </div>
+                    <div class="flex-wrapper">
+                        <button class="catalog__show-more">Показать ещё</button> 
+                    </div>                    
+                    <div class="catalog-pagination">
+                        <span class="catalog__page catalog__page_current">1</span>
+                        <a href="#" class="catalog__page">2</a>
+                        <a href="#" class="catalog__page">3</a>
+                        <a href="#" class="catalog__page">4</a>
+                        <a href="#" class="catalog__page">5</a>
+                        <a href="#" class="catalog__page">...</a>
+                        <a href="#" class="catalog__page">11</a>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section class="goods">
+            <h2 class="goods__title">C этим товаром покупают</h2>
+            <div class="goods-tabs-container">
+                <span class="goods__tab goods__tab_active">запчасти</span>
+                <span class="goods__tab">моторы</span>
+                <span class="goods__tab">шины</span>
+                <span class="goods__tab">электроника</span>
+                <span class="goods__tab">инструменты</span>
+                <span class="goods__tab">аксессуары</span>
+            </div>
+            <div class="goods-slider" data-slider="goods-slider">
+                <div class="slider-line-container">
+                    <div class="goods-slider-line" data-slider-line>
+                        <div class="goods-item-card">
+                            <div class="item-card__type">Sale</div>
+                            <button class="add-favourite">
+                                <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="1">
+                            </button>
+                            <div class="item-card__img-wrapper">
+                                <img src="img/index-page/item-portable-BRPaudio-system.png" alt="portable audio system" class="item-card__img">
+                            </div>                          
+                            <span class="item-card__info sold-out">BRP Audio-портативная система</span>
+                            <span class="item-card__out">нет в наличии</span>                                
+                            <a href="#" class="item-card__inform">Сообщить о поступлении</a>                                    
+                        </div>
+                        <div class="goods-item-card">                                
+                            <button class="add-favourite">
+                                <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="2">
+                            </button>
+                            <a href="#" class="item-card-action">
+                                <div class="item-card__img-wrapper">
+                                    <img src="img/index-page/item-echomap.png" alt="echomap" class="item-card__img">
+                                </div>                                    
+                                <span class="item-card__info">Garmin Echomap Plus 62cv</span>
+                                <span class="item-card__price">45 800 ₽</span>
+                                <div class="item-card__more">посмотреть товар</div>
+                            </a>                            
+                            <button class="add-cart">
+                                <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                            </button>                            
+                        </div>
+                        <div class="goods-item-card">
+                            <div class="item-card__type">Sale</div>
+                            <button class="add-favourite">
+                                <img src="img/general/heart-clicked.svg" alt="heart" class="add-favourite__icon" data-icon="3">
+                            </button>
+                            <div class="item-card__img-wrapper">
+                                <img src="img/index-page/item-el-key.png" alt="electronic key" class="item-card__img">      
+                            </div>                          
+                            <span class="item-card__info sold-out">RF D.E.S.S.TM Key</span>
+                            <span class="item-card__out">нет в наличии</span>                                
+                            <a href="#" class="item-card__inform">Сообщить о поступлении</a>                                
+                        </div>
+                        <div class="goods-item-card">                                
+                            <button class="add-favourite">
+                                <img src="img/general/heart.svg" alt="heart" class="add-favourite__icon" data-icon="4">
+                            </button>
+                            <a href="#" class="item-card-action">
+                                <div class="item-card__img-wrapper">
+                                    <img src="img/index-page/item-men's-water-suit.png" alt="men's water suit" class="item-card__img">
+                                </div>                                    
+                                <span class="item-card__info">Мужской костюм 3мм</span>
+                                <span class="item-card__price">7 000 ₽</span>
+                                <div class="item-card__more">посмотреть товар</div>
+                            </a>
+                            <button class="add-cart">
+                                <img src="img/index-page/cart-icon-white.svg" alt="cart" class="add-cart__icon">
+                            </button>                                                          
+                        </div>
+                    </div>
+                </div>                   
+                <div class="goods-slider-controls">
+                    <img src="img/index-page/control-left-black.svg" alt="arrow left" class="control-left_black" data-slider-control>
+                    <img src="img/index-page/control-right-black.svg" alt="arrow right" class="control-right_black" data-slider-control>
+                </div>
+                <div class="goods-slider-dots" data-slider-dots></div>
+            </div>
+            <a href="#" class="goods__show-more">Показать ещё</a>                
+        </section>            
+    </main>                        
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-main" id="footer-main">
+                <div class="subscription">
+                    <p class="subscription__text">Подпишитесь на нашу рассылку и узнавайте об акциях быстрее</p>
+                    <form action="#" class="subscription-form">
+                        <input type="email" class="subscription__input" placeholder="Введите ваш e-mail:">
+                        <button type="submit" class="subscription__btn">Отправить</button>
+                    </form>
+                </div>
+                <div class="footer-nav footer-nav-1">
+                    <h5 class="footer-nav__title" data-acrd-title="0">Информация</h5>
+                    <div class="footer-nav-list" data-acrd-content>
+                        <a href="#" class="footer-nav__link">О компании</a>
+                        <a href="#" class="footer-nav__link">Контакты</a>
+                        <a href="#" class="footer-nav__link">Акции</a>
+                        <a href="#" class="footer-nav__link">Магазины</a>
+                    </div>
+                </div>
+                <div class="footer-nav footer-nav-2">
+                    <h5 class="footer-nav__title" data-acrd-title="1">Интернет-магазин</h5>
+                    <div class="footer-nav-list" data-acrd-content>
+                        <a href="#" class="footer-nav__link">Доставка и самовывоз</a>
+                        <a href="#" class="footer-nav__link">Оплата</a>
+                        <a href="#" class="footer-nav__link">Возврат-обмен</a>
+                        <a href="#" class="footer-nav__link">Новости</a>
+                    </div>
+                </div>
+                <div class="footer-sm" id="footer-sm">
+                    <a href="#" class="footer-sm-item">
+                        <img src="img/general/instagram-icon.svg" alt="instagram icon" class="footer-sm__icon">
+                    </a>
+                    <a href="#" class="footer-sm-item">
+                        <img src="img/general/vk-icon.svg" alt="vk icon" class="footer-sm__icon">
+                    </a>
+                    <a href="#" class="footer-sm-item">
+                        <img src="img/general/facebook-icon.svg" alt="facebook icon" class="footer-sm__icon">
+                    </a>
+                    <a href="#" class="footer-sm-item">
+                        <img src="img/general/youtube-icon.svg" alt="youtube icon" class="footer-sm__icon">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-law" id="footer-law">
+                <a href="#" class="footer-law__link">Договор оферты</a>
+                <a href="#" class="footer-law__link">Политика обработки персональных данных</a>
+            </div>            
+        </div>                      
+    </footer>
+    <div class="menu-drawer" id="menu-drawer">        
+        <ul class="menu-drawer-list">
+            <li class="menu-drawer-item menu-drawer-item_icon">
+                <a href="#" class="menu-drawer__link">
+                    <img src="img/general/person.svg" alt="person icon"
+                            class="menu-drawer__icon menu-drawer__icon_person">Войти
+                </a>
+            </li>
+            <li class="menu-drawer-item menu-drawer-item_icon">
+                <a href="#" class="menu-drawer__link">
+                    <img src="img/general/person.svg" alt="person icon" class="menu-drawer__icon menu-drawer__icon_person">Регистрация
+                </a>
+            </li>
+            <li class="menu-drawer-item menu-drawer-item_icon">
+                <a href="#" class="menu-drawer__link">
+                    <img src="img/general/heart.svg" alt="heart icon"
+                            class="menu-drawer__icon menu-drawer__icon_heart">Избранное
+                </a>
+            </li>
+            <li class="menu-drawer-item menu-drawer-item_icon">
+                <a href="#" class="menu-drawer__link">
+                    <img src="img/general/cart.svg" alt="cart icon" class="menu-drawer__icon menu-drawer__icon_cart">Корзина
+                </a>
+            </li>
+            <li class="menu-drawer-item menu-drawer-item_icon">
+                <a href="#" class="menu-drawer__link">
+                    <img src="img/general/shop-icon.svg" alt="shop icon" class="menu-drawer__icon menu-drawer__icon_shop">Магазины
+                </a>
+            </li>
+            <li class="menu-drawer-item menu-drawer-item_icon menu-drawer-item_icon-font">
+                <a href="#" class="menu-drawer__link">
+                    <span class="menu-drawer__icon-font">%</span>Акции
+                </a>
+            </li>
+            <li class="menu-drawer-item menu-drawer-item_icon">
+                <a href="#" class="menu-drawer__link">
+                    <img src="img/general/delivery-icon.svg" alt="delivery icon" class="menu-drawer__icon menu-drawer__icon_delivery">Доставка и оплата
+                </a>
+            </li>
+            <li class="menu-drawer-item">
+                <a href="#" class="menu-drawer__link">Квадроциклы</a>
+            </li>
+            <li class="menu-drawer-item">
+                <a href="#" class="menu-drawer__link">Катера</a>
+            </li>
+            <li class="menu-drawer-item">
+                <a href="#" class="menu-drawer__link menu-drawer__link_active">Гидроциклы</a>
+            </li>
+            <li class="menu-drawer-item">
+                <a href="#" class="menu-drawer__link">Лодки</a>
+            </li>
+            <li class="menu-drawer-item">
+                <a href="#" class="menu-drawer__link">Вездеходы</a>
+            </li>
+            <li class="menu-drawer-item">
+                <a href="#" class="menu-drawer__link">Снегоходы</a>
+            </li>
+            <li class="menu-drawer-item">
+                <a href="#" class="menu-drawer__link">Двигатели</a>
+            </li>
+            <li class="menu-drawer-item">
+                <a href="#" class="menu-drawer__link">Запчасти</a>
+            </li>
+        </ul>
+        <span class="menu-drawer__location">Москва,<br>ул. Науки 25</span>        
+    </div>   
+    <script src="js/catalogPage.js" type="module"></script>
+</body>
+</html>
