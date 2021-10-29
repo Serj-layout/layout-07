@@ -1263,6 +1263,7 @@ main {
 .range-slider__tooltip {
   position: absolute;
   top: -17px;
+  left: -10px;
   pointer-events: none;
   opacity: 0;
   text-align: center;
