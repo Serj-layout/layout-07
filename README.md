@@ -3,7 +3,7 @@
 #### https://serj-layout.github.io/layout-07/catalog.html
 #### https://serj-layout.github.io/layout-07/product.html
 
-### Интерактив
+### Интерактив на чистом JS
 #### На всех страницах
 Выдвижное меню при адаптации размера экрана
 #### index.html
